@@ -12,13 +12,11 @@
     weight_jin: 298,  // 斤
     waist_cm: 81,
     chest_cm: 101,
-    hip_cm: 97,
-    thigh_cm: 56,
-    note: "可选备注"
+    hip_cm: 97
   }
   ```
-- 单位固定：身高/围度是 cm，体重是 斤。
-- 可选字段：`thigh_cm`、`arm_cm`、`note`，或自行增加其他字段。
+- 单位固定：身高/围度是 cm，体重是 斤。页面会根据身高和体重自动计算 BMI。
+- 仅保留字段：`date`、`height_cm`、`weight_jin`、`waist_cm`、`chest_cm`、`hip_cm`。
 - 保存后直接刷新 `index.html` 查看最新记录和折线图。
 
 ## 页面说明
