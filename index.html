@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>身体数据记录</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="hero-content">
+        <div>
+          <div class="badge">身体数据 · <span id="last-updated">加载中</span></div>
+          <h1>记录身体状态 · 见证每次进步</h1>
+          <p class="subtitle">追踪关键围度和体重变化，保持节奏，持续优化。</p>
+          <div class="stats" id="highlight-stats"></div>
+        </div>
+        <div class="stats">
+          <div class="stat-card">
+            <div class="stat-label">最新 BMI</div>
+            <div class="stat-value" id="bmi-value">--</div>
+            <div class="note" id="bmi-note">以身高和体重计算</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">周对比（体重）</div>
+            <div class="stat-value" id="weekly-delta">--</div>
+            <div class="note">与上一条记录对比，单位：斤</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">总记录数</div>
+            <div class="stat-value" id="total-count">--</div>
+            <div class="note">按日期排序展示</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>折线趋势</h2>
+        <div class="pill">选择指标查看变化</div>
+      </div>
+      <div class="chart-wrap">
+        <div class="chart-controls" id="chart-controls"></div>
+        <canvas id="chart" width="900" height="320"></canvas>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <h2>时间线</h2>
+        <div class="pill">最新在前 · 单位：cm / 斤</div>
+      </div>
+      <div class="entries" id="entries"></div>
+    </section>
+  </div>
+
+  <script src="data/measurements.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
