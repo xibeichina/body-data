@@ -7,12 +7,12 @@
 - 推荐格式：
   ```js
   {
-    date: "2025-01-05",
-    height_cm: 178,   // cm
-    weight_jin: 298,  // 斤
-    waist_cm: 81,
-    chest_cm: 101,
-    hip_cm: 97
+    date: "2024-12-18",
+    height_cm: 178, //身高
+    weight_jin: 300, //体重
+    waist_cm: 82, // 腰围
+    chest_cm: 101, // 胸围
+    hip_cm: 97 // 臀围
   }
   ```
 - 单位固定：身高/围度是 cm，体重是 斤。页面会根据身高和体重自动计算 BMI。
