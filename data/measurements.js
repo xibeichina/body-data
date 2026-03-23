@@ -102,5 +102,11 @@ window.bodyMeasurements = [
         "date": "2025-12-08",
         "height_cm": 173,
         "weight_jin": 176.0
+    },
+    {
+        "chest_cm": 98.0,
+        "date": "2026-03-22",
+        "waist_cm": 100.0,
+        "weight_jin": 175.0
     }
 ];
